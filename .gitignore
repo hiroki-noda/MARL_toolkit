@@ -1,0 +1,5 @@
+src/logs/
+src/checkpoints/
+src/render_frames_adversarial_tag/
+src/render_frames_adversarial_tag_4p/
+src/render_frames_coop_nav/
