@@ -7,25 +7,6 @@ MuJoCoを使用した2体のAntエージェントによる相撲タスクの強�
 ```
 reinforcement-learning/
 ├── docker/
-│   ├── Dockerfile          # Ubuntu 24.04 + CUDA + MuJoCo + PyTorch + ROS2
-# 強化学習プロジェクト - Self-Play マルチエージェント RL
-
-MuJoCo ベースの Ant Sumo から、2～4 体のマルチエージェント環境（タグ、協調ナビゲーション、行列ゲーム）までを対象とした、
-Self-Play 強化学習フレームワークです。
-
-- 複数環境を `--env-id` で切り替え
-- PPO / SAC / TD3 とその再帰版 (rPPO / rSAC / rTD3)
-- 4 体タグ環境用の「役割予測付き」再帰モデル (rtd3_role / rsac_role / rppo_role)
-- TensorBoard ログ (うち role_loss も可視化)
-- 学習済みモデルの対戦・可視化スクリプト
-
----
-
-## ディレクトリ構成（抜粋）
-
-```text
-reinforcement-learning/
-├── docker/
 │   ├── Dockerfile          # Ubuntu + CUDA + MuJoCo + PyTorch 環境
 │   ├── build.sh            # Docker イメージビルド
 │   └── run.sh              # コンテナ起動
